@@ -52,7 +52,7 @@ input{
 }
 
 .upperadd{
-    height: 54.3px;
+    height: 100%;
     width: 50%;
     background-color: transparent;
     /* border: 2px solid grey; */
@@ -68,8 +68,8 @@ input{
     /* bottom: 0px; */
     height: 0px;
     width: 50%;
-    border-right: 3px solid black;
-    border-left: 3px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
 }
 
 .uv1{
@@ -81,13 +81,14 @@ input{
 }
 
 .upperhorizontal{
+    box-sizing: border-box;
     top: 0px;
-    /* background-color: grey; */
+    height: 100%;
     left: 0;
     right: 0;
     width: 0%;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .anihorizontal{
