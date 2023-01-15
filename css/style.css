@@ -7,6 +7,7 @@ body{
     width: 100vw;
     animation: backani 8s alternate infinite ease-in-out;
     margin: 0px;
+    overflow-y: scroll;
 }
 
 @keyframes backani{
@@ -67,8 +68,8 @@ input{
     /* bottom: 0px; */
     height: 0px;
     width: 50%;
-    border-right: 2px solid black;
-    border-left: 2px solid black;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
 }
 
 .uv1{
@@ -85,8 +86,8 @@ input{
     left: 0;
     right: 0;
     width: 0%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 .anihorizontal{
