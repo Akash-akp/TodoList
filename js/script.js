@@ -4,8 +4,10 @@ let u = document.getElementsByClassName("upperadd");
 inp.addEventListener("focus",function(){
     u[0].classList.add("anihorizontal");
     setTimeout(()=>{
-        u[1].classList.add("anivertical");
-        u[2].classList.add("anivertical");
+        if(this == document.activeElement){
+            u[1].classList.add("anivertical");
+            u[2].classList.add("anivertical");
+        }
     },1000)
 });
 inp.addEventListener("blur",function(){
@@ -14,5 +16,8 @@ inp.addEventListener("blur",function(){
     u[2].classList.remove("anivertical");
 });
 u[1].addEventListener("click",function(){
+    inp.focus();
+});
+u[2].addEventListener("click",function(){
     inp.focus();
 });
